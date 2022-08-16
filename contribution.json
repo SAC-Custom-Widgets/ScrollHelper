@@ -1,0 +1,77 @@
+{
+	"eula": "",
+	"vendor": "Nikolaj Kappler",
+	"license": "",
+	"id": "nkappler.scrollhelper",
+	"version": "0.1.0",
+	"name": "Scroll Helper",
+	"newInstancePrefix": "ScrollHelper",
+	"description": "A Custom Widget that provides an API to scroll the Application via scripting",
+	"icon": "https://widgets.nkappler.de/ScrollHelper/icon.png",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "sdk-scrollhelper",
+			"url": "https://widgets.nkappler.de/ScrollHelper/main-webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"backgroundColor": {
+			"type": "string",
+			"description": "The color of the background",
+			"default": "#ffffff"
+		},
+		"width": {
+			"type": "integer",
+			"default": 64
+		},
+		"height": {
+			"type": "integer",
+			"default": 64
+		},
+		"x" : {
+			"type": "integer",
+			"default": 0
+		},
+		"y" : {
+			"type": "integer",
+			"default": 0
+		}
+
+	},
+	"methods": {
+		"scrollX": {
+			"description": "Sets the scrollX value of the Application.",
+			"parameters": [
+				{
+					"name": "x",
+					"type": "integer"
+				}
+			],
+			"body": "this.x = x;"
+		},
+		"scrollY": {
+			"description": "Sets the scrollY value of the Application.",
+			"parameters": [
+				{
+					"name": "y",
+					"type": "integer"
+				}
+			],
+			"body": "this.y = y;"
+		},
+		"getScrollX": {
+			"description": "Gets the scrollX value of the Application.",
+			"parameters": [],
+			"returnType": "integer"
+		},
+		"getScrollY": {
+			"description": "Sets the scrollY value of the Application.",
+			"parameters": [],
+			"returnType": "integer"
+		}
+	},
+	"events": {}
+}
