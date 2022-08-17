@@ -18,11 +18,6 @@
 		}
 	],
 	"properties": {
-		"backgroundColor": {
-			"type": "string",
-			"description": "The color of the background",
-			"default": "#ffffff"
-		},
 		"width": {
 			"type": "integer",
 			"default": 64
